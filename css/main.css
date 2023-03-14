@@ -1,0 +1,248 @@
+/* Page */
+* {
+  font-family: 'Poppins', sans-serif; }
+
+/* Header */
+@media (max-width: 992px) {
+  header .navbar-nav {
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  header .nav-link {
+    padding-left: 0px !important; }
+  header li button {
+    margin-top: 16px;
+    margin-left: 0px !important; } }
+
+header .navbar-dark {
+  background-color: #48435c !important;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  header .navbar-dark .container img {
+    width: 150px; }
+  header .navbar-dark .container .navbar-toggler {
+    margin-left: 20px;
+    color: transparent; }
+  header .navbar-dark .container .navbar-collapse {
+    flex-grow: 0; }
+    header .navbar-dark .container .navbar-collapse .navbar-nav li button {
+      margin-left: 20px;
+      margin-right: 0px !important; }
+      header .navbar-dark .container .navbar-collapse .navbar-nav li button:hover {
+        background-color: #ffffff !important;
+        color: #48435c !important; }
+    header .navbar-dark .container .navbar-collapse .navbar-nav .nav-link {
+      padding-right: 20px;
+      padding-left: 20px;
+      color: white; }
+
+/* Main */
+main {
+  background-color: #edffec;
+  padding-top: 128px;
+  padding-bottom: 60px; }
+  @media (max-width: 992px) {
+    main h2 {
+      font-size: 32px; } }
+  main h2 {
+    color: #6963be; }
+  main h4 {
+    color: #48435c; }
+  main h5 {
+    color: #5a5766; }
+  main p {
+    color: #5a5766; }
+  main .card-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px; }
+  @media (max-width: 992px) {
+    main .button-container {
+      margin-top: 24px; } }
+  main .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px; }
+  @media (max-width: 992px) {
+    main .mas-informacion {
+      margin-top: 16px;
+      margin-bottom: 16px; } }
+  main .mas-informacion {
+    display: flex;
+    flex-flow: column;
+    margin-top: 24px;
+    margin-bottom: 48px;
+    gap: 8px; }
+    main .mas-informacion p {
+      font-size: small;
+      margin: 0; }
+    main .mas-informacion div {
+      display: flex;
+      flex-flow: column;
+      gap: 4px; }
+  @media (max-width: 992px) {
+    main .mas-informacion__pago {
+      margin-bottom: 24px; } }
+  main .about {
+    display: flex;
+    flex-flow: row;
+    gap: 80px;
+    margin-bottom: 48px; }
+    main .about img {
+      width: 200px;
+      height: 200px;
+      border: #6963be;
+      border-style: solid; }
+  main .about-section {
+    display: flex;
+    flex-flow: column;
+    gap: 24px; }
+  main #main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 48px; }
+    main #main-title p {
+      font-style: italic; }
+  main .go-back a {
+    color: #6963be;
+    text-decoration: none; }
+  main .button-primary {
+    padding: 10 15 10 15;
+    background-color: #6963be;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: medium;
+    color: white;
+    transition: all 0.3s ease; }
+    main .button-primary:hover {
+      transform: scale(1.02);
+      box-shadow: 1px 1px 10px 8px #b6b6b615;
+      transition: all 0.3s ease; }
+  main .button-style {
+    padding: 8px;
+    background-color: none;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: medium;
+    color: #6963be; }
+  main .question-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 48px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c; }
+  main .question-section-items {
+    display: flex;
+    flex-direction: row;
+    gap: 8px; }
+  main .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c; }
+  main .form-section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c; }
+  @media (max-width: 992px) {
+    main .form-base {
+      display: flex;
+      flex-flow: column;
+      gap: 16px; } }
+  main .form-base {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    gap: 16px; }
+  @media (max-width: 992px) {
+    main .input-title {
+      width: 100%; } }
+  main .input-title {
+    height: 48px;
+    border-color: #5a5766;
+    border-radius: 6px;
+    width: 40%; }
+  main .inputs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
+  main .textarea-description {
+    border-color: #5a5766;
+    border-radius: 6px;
+    width: 100%; }
+  main .input-price {
+    height: 48px;
+    width: 30%;
+    border-color: #5a5766;
+    border-radius: 6px; }
+  main .profile-2 {
+    border-radius: 100%; }
+  main .card-proyectos {
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c;
+    transition: all 0.3s ease; }
+    main .card-proyectos img {
+      margin-bottom: 16px; }
+    main .card-proyectos:hover {
+      transform: scale(1.01);
+      box-shadow: 1px 1px 10px 8px #b6b6b615;
+      transition: all 0.3s ease; }
+  main .button-container-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px; }
+  main div img {
+    width: 150px; }
+  main .card-profesionales {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 1px 1px 10px 8px #b6b6b61a;
+    padding: 30px;
+    border-radius: 6px;
+    gap: 36px;
+    width: 42%; }
+    main .card-profesionales div {
+      display: flex;
+      flex-direction: column;
+      gap: 16px; }
+  main .profile {
+    border-radius: 100%; }
+  main .score {
+    width: 150px; }
+  main ul {
+    list-style: inside;
+    list-style-type: circle; }
+  main .button-container-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-top: 16px; }
+
+/* Footer */
+footer {
+  background-color: #5a5766;
+  display: flex;
+  flex-flow: column;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px; }
+  footer .p-main {
+    font-weight: 400; }
+  footer .p-secondary {
+    font-weight: 200; }
