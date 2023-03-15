@@ -69,6 +69,11 @@ main{
             font-size: 32px;
         }
     }
+    @media (max-width: 992px){
+        #main-title{
+            margin-bottom: 24px !important;
+        }
+    }
     h2{
         color: #6963be;
     }
@@ -121,6 +126,15 @@ main{
     @media (max-width: 992px){
         .mas-informacion__pago{
             margin-bottom: 24px;
+        }
+    }
+    @media (max-width: 992px){
+        .about{
+            display: flex;
+            flex-flow: row wrap !important;
+            margin-bottom: 24px !important;
+            gap: 48px !important;
+            justify-content: center !important;
         }
     }
     .about{
@@ -214,8 +228,7 @@ main{
     @media (max-width: 992px){
         .form-base{
             display: flex;
-            flex-flow: column;
-            gap: 16px;
+            flex-flow: column !important;
         }  
     }
     .form-base{
@@ -233,7 +246,6 @@ main{
         height: 48px;
         border-color: #5a5766;
         border-radius: 6px;
-        width: 40%;
     }
     .inputs{
         display: flex;

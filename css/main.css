@@ -45,6 +45,9 @@ main {
   @media (max-width: 992px) {
     main h2 {
       font-size: 32px; } }
+  @media (max-width: 992px) {
+    main #main-title {
+      margin-bottom: 24px !important; } }
   main h2 {
     color: #6963be; }
   main h4 {
@@ -84,6 +87,13 @@ main {
   @media (max-width: 992px) {
     main .mas-informacion__pago {
       margin-bottom: 24px; } }
+  @media (max-width: 992px) {
+    main .about {
+      display: flex;
+      flex-flow: row wrap !important;
+      margin-bottom: 24px !important;
+      gap: 48px !important;
+      justify-content: center !important; } }
   main .about {
     display: flex;
     flex-flow: row;
@@ -160,8 +170,7 @@ main {
   @media (max-width: 992px) {
     main .form-base {
       display: flex;
-      flex-flow: column;
-      gap: 16px; } }
+      flex-flow: column !important; } }
   main .form-base {
     display: flex;
     flex-flow: row;
@@ -173,8 +182,7 @@ main {
   main .input-title {
     height: 48px;
     border-color: #5a5766;
-    border-radius: 6px;
-    width: 40%; }
+    border-radius: 6px; }
   main .inputs {
     display: flex;
     flex-flow: row wrap;
