@@ -211,6 +211,11 @@ main {
     border-radius: 6px;
     box-shadow: 1px 1px 10px 8px #b6b6b60c;
     transition: all 0.3s ease; }
+    @media (max-width: 992px) {
+      main .card-proyectos .button-container-1 {
+        display: flex;
+        flex-flow: row;
+        justify-content: center; } }
     main .card-proyectos img {
       margin-bottom: 16px; }
     main .card-proyectos:hover {
@@ -219,10 +224,15 @@ main {
       transition: all 0.3s ease; }
   main .button-container-1 {
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    align-items: end;
     margin-top: 16px; }
   main div img {
     width: 150px; }
+  @media (max-width: 992px) {
+    main .card-profesionales {
+      display: flex;
+      flex-flow: row wrap; } }
   main .card-profesionales {
     display: flex;
     flex-direction: row;
@@ -231,11 +241,20 @@ main {
     padding: 30px;
     border-radius: 6px;
     gap: 36px;
-    width: 42%; }
+    transition: all 0.3s ease; }
+    main .card-profesionales:hover {
+      transform: scale(1.01);
+      box-shadow: 1px 1px 10px 8px #b6b6b615;
+      transition: all 0.3s ease; }
     main .card-profesionales div {
       display: flex;
       flex-direction: column;
       gap: 16px; }
+    @media (max-width: 992px) {
+      main .card-profesionales .button-container-2 {
+        display: flex;
+        flex-flow: row;
+        justify-content: center; } }
   main .profile {
     border-radius: 100%; }
   main .score {
