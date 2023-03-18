@@ -62,7 +62,6 @@ header{
 /* Main */
 main{
     background-color: #edffec;
-    padding-top: 128px;
     padding-bottom: 60px;
     @media (max-width: 992px){
         h2{
@@ -70,8 +69,183 @@ main{
         }
     }
     @media (max-width: 992px){
+        .top--section{
+            background-image: url(../images/img--pc-m.jpg) !important;
+        }
+    }
+    .top--section{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        margin-top: 80px;
+        padding-bottom: 60px;
+        background-image: url(../images/img--pc.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+        .top--content{
+            h1{
+                text-align: center;
+                color: #ffffff;
+                padding-top: 48px;
+            }
+            p{
+                text-align: center;
+                color: #ffffff;
+                padding-top: 16px;
+            }
+            .container__button{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                margin-top: 60px;
+                gap: 24px;
+                button{
+                    background-color: #000 !important;
+                    border-color: #61e786 !important;
+                    &:hover{
+                        background-color: #61e786 !important;
+                        color: #48435c !important;
+                    }
+                }
+            }
+        }
+        .bottom--content{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            p{
+                padding: 0px;
+                color: #ffffff;
+            }
+            @keyframes img{
+                0%{
+                    transform: translateY(0px);
+                }
+                33%{
+                    transform: translateY(4px)
+                }
+                66%{
+                    transform: translateY(-4px)
+                }
+                99%{
+                    transform: translateY(0px);
+                }
+            }
+            img{
+                width: 24px;
+                height: 24px;
+                animation-name: img;
+                animation-duration: 1.8s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-direction: initial;
+            }
+        }
+    }
+    .us--section{
+        background-color: #ffffff;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        h2{
+            margin-bottom: 24px;
+        }
+        p{
+            color: #5a5766;
+        }
+    }
+    .comments--section{
+        padding-top: 80px;
+        .card-profesionales{
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            box-shadow: 1px 1px 10px 8px #b6b6b60c;
+            padding: 30px;
+            border-radius: 6px;
+            gap: 36px;
+        }
+        h2{
+            margin-bottom: 24px;
+        }
+    }
+    .premium-text{
+        color: #5a5766;
+        margin-bottom: 24px;
+    }
+    .card--base{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+        background-color: white;
+        stroke-width: 2px;
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px 8px #b6b6b60c;
+        .top-section{
+            h5{
+                color: #48435c;
+            }
+            .badge{
+                margin-bottom: 24px;
+            }
+            .price{
+                display: flex;
+                flex-direction: row wrap;
+                align-items: baseline;
+            }
+        }
+        .bottom-section{
+            p{
+                color: #5a5766;
+            }
+        }
+    }
+    .card--prominent{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 48px;
+        background-color: white;
+        border: 2px solid #61e786;
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px 8px #b6b6b60c;
+        .top-section{
+            h5{
+                color: #48435c;
+            }
+            .badge{
+                margin-bottom: 24px;
+            }
+            .price{
+                display: flex;
+                flex-direction: row wrap;
+                align-items: baseline;
+            }
+        }
+        .bottom-section{
+            p{
+                color: #5a5766;
+            }
+        }
+    }
+    @media (max-width: 992px){
         #main-title{
             margin-bottom: 24px !important;
+            margin-top: 104px !important;
+        }
+    }
+    #main-title{
+        margin-top: 128px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-bottom: 48px;
+        p{
+            font-style: italic;
         }
     }
     h2{
@@ -104,7 +278,7 @@ main{
     @media (max-width: 992px){
         .mas-informacion{
             margin-top: 16px;
-            margin-bottom: 16px;
+            margin-bottom: 16px !important;
         }
     }
     .mas-informacion{
@@ -125,7 +299,7 @@ main{
     }
     @media (max-width: 992px){
         .mas-informacion__pago{
-            margin-bottom: 24px;
+            margin-bottom: 24px !important;
         }
     }
     @media (max-width: 992px){
@@ -154,14 +328,8 @@ main{
         flex-flow: column;
         gap: 24px;
     }
-    #main-title{
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        margin-bottom: 48px;
-        p{
-            font-style: italic;
-        }
+    .breadcrumb{
+        margin-bottom: 24px;
     }
     .go-back{
         a{
@@ -216,36 +384,33 @@ main{
         border-radius: 6px;
         box-shadow: 1px 1px 10px 8px #b6b6b60c;
     }
-    .form-section-2{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        background-color: white;
-        padding: 30px;
-        border-radius: 6px;
-        box-shadow: 1px 1px 10px 8px #b6b6b60c;
-    }
     @media (max-width: 992px){
         .form-base{
             display: flex;
             flex-flow: column !important;
         }  
     }
+    .tyc-text{
+        margin-bottom: 1% !important;
+        a{
+            color: #0d6efd !important;
+            text-decoration: underline !important;
+        }
+    }
     .form-base{
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         align-items: flex-start;
-        gap: 16px;
+        gap: 24px;
+        width: 100%;
+        .form-control{
+            width: 100%;
+        }
     }
     @media (max-width: 992px){
         .input-title{
             width: 100%;
         }
-    }
-    .input-title{
-        height: 48px;
-        border-color: #5a5766;
-        border-radius: 6px;
     }
     .inputs{
         display: flex;
@@ -253,33 +418,17 @@ main{
         justify-content: space-between;
         align-items: flex-start;
     }
-    .container__inputs--2-items{
+    .container__inputs{
         display: flex;
         flex-flow: row wrap;
         gap: 24px;
-        .input--price-2{
-            flex-grow: 1;
-            height: 48px;
-            border-color: #5a5766;
-            border-radius: 6px;
-        }
-        .input--title-2{
+        .form-floating{
             flex-grow: 2;
-            height: 48px;
-            border-color: #5a5766;
-            border-radius: 6px;
+            height: fill;
         }
     }
-    .textarea-description{
-        border-color: #5a5766;
-        border-radius: 6px;
+    .form-control{
         width: 100%;
-    }
-    .input-price{
-        height: 48px;
-        width: 30%;
-        border-color: #5a5766;
-        border-radius: 6px;
     }
     .profile-2{
         border-radius: 100%;
@@ -321,13 +470,14 @@ main{
         .card-profesionales{
             display: flex;
             flex-flow: row wrap;
+            justify-content: center;
         }
     }
     .card-profesionales{
         display: flex;
         flex-direction: row;
         background-color: white;
-        box-shadow: 1px 1px 10px 8px #b6b6b61a;
+        box-shadow: 1px 1px 10px 8px #b6b6b60c;
         padding: 30px;
         border-radius: 6px;
         gap: 36px;
@@ -382,5 +532,22 @@ footer{
     }
     .p-secondary{
         font-weight: 200;
+    }
+    @media (max-width: 992px){
+        .container--footer{
+            display: flex !important;
+            flex-flow: column !important;
+        }
+    }
+    .container--footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        .left-content{
+            gap: 24px;
+            a{
+                text-decoration: none !important;
+            }
+        }
     }
 }

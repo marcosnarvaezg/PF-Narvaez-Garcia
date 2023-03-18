@@ -40,14 +40,144 @@ header .navbar-dark {
 /* Main */
 main {
   background-color: #edffec;
-  padding-top: 128px;
   padding-bottom: 60px; }
   @media (max-width: 992px) {
     main h2 {
       font-size: 32px; } }
   @media (max-width: 992px) {
+    main .top--section {
+      background-image: url(../images/img--pc-m.jpg) !important; } }
+  main .top--section {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-top: 80px;
+    padding-bottom: 60px;
+    background-image: url(../images/img--pc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%; }
+    main .top--section .top--content h1 {
+      text-align: center;
+      color: #ffffff;
+      padding-top: 48px; }
+    main .top--section .top--content p {
+      text-align: center;
+      color: #ffffff;
+      padding-top: 16px; }
+    main .top--section .top--content .container__button {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-top: 60px;
+      gap: 24px; }
+      main .top--section .top--content .container__button button {
+        background-color: #000 !important;
+        border-color: #61e786 !important; }
+        main .top--section .top--content .container__button button:hover {
+          background-color: #61e786 !important;
+          color: #48435c !important; }
+    main .top--section .bottom--content {
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      main .top--section .bottom--content p {
+        padding: 0px;
+        color: #ffffff; }
+
+@keyframes img {
+  0% {
+    transform: translateY(0px); }
+  33% {
+    transform: translateY(4px); }
+  66% {
+    transform: translateY(-4px); }
+  99% {
+    transform: translateY(0px); } }
+      main .top--section .bottom--content img {
+        width: 24px;
+        height: 24px;
+        animation-name: img;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: initial; }
+  main .us--section {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px; }
+    main .us--section h2 {
+      margin-bottom: 24px; }
+    main .us--section p {
+      color: #5a5766; }
+  main .comments--section {
+    padding-top: 80px; }
+    main .comments--section .card-profesionales {
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      box-shadow: 1px 1px 10px 8px #b6b6b60c;
+      padding: 30px;
+      border-radius: 6px;
+      gap: 36px; }
+    main .comments--section h2 {
+      margin-bottom: 24px; }
+  main .premium-text {
+    color: #5a5766;
+    margin-bottom: 24px; }
+  main .card--base {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+    background-color: white;
+    stroke-width: 2px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c; }
+    main .card--base .top-section h5 {
+      color: #48435c; }
+    main .card--base .top-section .badge {
+      margin-bottom: 24px; }
+    main .card--base .top-section .price {
+      display: flex;
+      flex-direction: row wrap;
+      align-items: baseline; }
+    main .card--base .bottom-section p {
+      color: #5a5766; }
+  main .card--prominent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+    background-color: white;
+    border: 2px solid #61e786;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c; }
+    main .card--prominent .top-section h5 {
+      color: #48435c; }
+    main .card--prominent .top-section .badge {
+      margin-bottom: 24px; }
+    main .card--prominent .top-section .price {
+      display: flex;
+      flex-direction: row wrap;
+      align-items: baseline; }
+    main .card--prominent .bottom-section p {
+      color: #5a5766; }
+  @media (max-width: 992px) {
     main #main-title {
-      margin-bottom: 24px !important; } }
+      margin-bottom: 24px !important;
+      margin-top: 104px !important; } }
+  main #main-title {
+    margin-top: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 48px; }
+    main #main-title p {
+      font-style: italic; }
   main h2 {
     color: #6963be; }
   main h4 {
@@ -70,7 +200,7 @@ main {
   @media (max-width: 992px) {
     main .mas-informacion {
       margin-top: 16px;
-      margin-bottom: 16px; } }
+      margin-bottom: 16px !important; } }
   main .mas-informacion {
     display: flex;
     flex-flow: column;
@@ -86,7 +216,7 @@ main {
       gap: 4px; }
   @media (max-width: 992px) {
     main .mas-informacion__pago {
-      margin-bottom: 24px; } }
+      margin-bottom: 24px !important; } }
   @media (max-width: 992px) {
     main .about {
       display: flex;
@@ -108,13 +238,8 @@ main {
     display: flex;
     flex-flow: column;
     gap: 24px; }
-  main #main-title {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin-bottom: 48px; }
-    main #main-title p {
-      font-style: italic; }
+  main .breadcrumb {
+    margin-bottom: 24px; }
   main .go-back a {
     color: #6963be;
     text-decoration: none; }
@@ -159,58 +284,40 @@ main {
     padding: 30px;
     border-radius: 6px;
     box-shadow: 1px 1px 10px 8px #b6b6b60c; }
-  main .form-section-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    background-color: white;
-    padding: 30px;
-    border-radius: 6px;
-    box-shadow: 1px 1px 10px 8px #b6b6b60c; }
   @media (max-width: 992px) {
     main .form-base {
       display: flex;
       flex-flow: column !important; } }
+  main .tyc-text {
+    margin-bottom: 1% !important; }
+    main .tyc-text a {
+      color: #0d6efd !important;
+      text-decoration: underline !important; }
   main .form-base {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     align-items: flex-start;
-    gap: 16px; }
+    gap: 24px;
+    width: 100%; }
+    main .form-base .form-control {
+      width: 100%; }
   @media (max-width: 992px) {
     main .input-title {
       width: 100%; } }
-  main .input-title {
-    height: 48px;
-    border-color: #5a5766;
-    border-radius: 6px; }
   main .inputs {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start; }
-  main .container__inputs--2-items {
+  main .container__inputs {
     display: flex;
     flex-flow: row wrap;
     gap: 24px; }
-    main .container__inputs--2-items .input--price-2 {
-      flex-grow: 1;
-      height: 48px;
-      border-color: #5a5766;
-      border-radius: 6px; }
-    main .container__inputs--2-items .input--title-2 {
+    main .container__inputs .form-floating {
       flex-grow: 2;
-      height: 48px;
-      border-color: #5a5766;
-      border-radius: 6px; }
-  main .textarea-description {
-    border-color: #5a5766;
-    border-radius: 6px;
+      height: fill; }
+  main .form-control {
     width: 100%; }
-  main .input-price {
-    height: 48px;
-    width: 30%;
-    border-color: #5a5766;
-    border-radius: 6px; }
   main .profile-2 {
     border-radius: 100%; }
   main .card-proyectos {
@@ -240,12 +347,13 @@ main {
   @media (max-width: 992px) {
     main .card-profesionales {
       display: flex;
-      flex-flow: row wrap; } }
+      flex-flow: row wrap;
+      justify-content: center; } }
   main .card-profesionales {
     display: flex;
     flex-direction: row;
     background-color: white;
-    box-shadow: 1px 1px 10px 8px #b6b6b61a;
+    box-shadow: 1px 1px 10px 8px #b6b6b60c;
     padding: 30px;
     border-radius: 6px;
     gap: 36px;
@@ -289,3 +397,15 @@ footer {
     font-weight: 400; }
   footer .p-secondary {
     font-weight: 200; }
+  @media (max-width: 992px) {
+    footer .container--footer {
+      display: flex !important;
+      flex-flow: column !important; } }
+  footer .container--footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    footer .container--footer .left-content {
+      gap: 24px; }
+      footer .container--footer .left-content a {
+        text-decoration: none !important; }

@@ -12,7 +12,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="../css/main.css">
-    <title>Nueva publicación - IT Project</title>
+    <title>Publicar anuncio - IT Project</title>
     <meta name="description" content="IT Project es una nueva plataforma | Publica tu anuncio como profesional o tu proyecto">
     <meta name="keywords" content="freelance, web, developer, diseñador, designer, ux, qa, ui, proyecto, tecnología">
 </head>
@@ -27,13 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Proyectos</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="profesionales.html">Profesionales</a>
+                            <a class="nav-link" href="ser-premium.html">Ser premium</a>
                         </li>
                         <li>
-                            <button class="btn btn-outline-success me-2" type="button" style="background-color: #ffffff; color: #48435c; border-color: white;">Nueva publicación</button>
+                            <button class="btn btn-outline-success me-2" type="button" style="background-color: #ffffff; color: #48435c; border-color: white;">Publicar anuncio</button>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div id="main-title" class="col-12">
-                    <h2>Nueva publicación 📤</h2>
+                    <h2>Nueva publicación</h2>
                 </div>
             </div>
         </div>
@@ -54,12 +54,20 @@
                     <div class="question-section">
                         <h4>¿Qué querés publicar?</h4>
                         <div class="question-section-items">
-                            <input name="seleccionar" type="radio">
-                            <label for="profesional">Mis servicios profesionales</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Un proyecto
+                                </label>
+                              </div>
                         </div>
                         <div class="question-section-items">
-                            <input name="seleccionar" type="radio">
-                            <label for="proyecto">Un proyecto</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Mis servicios profesionales
+                                </label>
+                              </div>
                         </div>
                     </div>
                 </div>
@@ -70,11 +78,20 @@
                 <div class="col-12">
                     <div class="form-section">
                         <h4>Detalles de la publicación</h4>
-                        <div class="container__inputs--2-items">
-                                <input class="input--title-2" type="text" placeholder="Título de la publicación">
-                                <input class="input--price-2" type="text" placeholder="Importe pretendido">
+                        <div class="container__inputs">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Título de la publicación">
+                                <label for="floatingInput">Título de la publicación</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Importe">
+                                <label for="floatingInput">Importe en pesos</label>
+                            </div>
                         </div>
-                            <textarea name="detalle" class="textarea-description" cols="30" rows="5">Descripción breve</textarea>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Descripción</label>
+                        </div>
                         <div class="button-container">
                             <a class="button-primary" href="">Publicar anuncio</a>
                         </div>
@@ -86,9 +103,20 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="column-1">
-                    <p class="p-main">IT project | Todos los derechos reservados</p>
-                    <p class="p-secondary">Creado por Marcos Narváez García</p>
+                <div class="column-12">
+                    <div class="container--footer">
+                        <div class="right-content">
+                        <p class="p-main">IT project | Todos los derechos reservados</p>
+                        <p class="p-secondary">Creado por Marcos Narváez García</p>
+                    </div>
+                    <div class="left-content">
+                        <a href="#">
+                            <img src="../images/icon--instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="../images/icon--facebook.png" alt="Facebook">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
